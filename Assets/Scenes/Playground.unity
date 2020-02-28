@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038bce13038506a47934c6cf92477202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars: {fileID: 2069928167}
+  cars: {fileID: 0}
   fixedRotation: {x: 0, y: 0, z: 0}
   fixedPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1629382845
@@ -904,18 +904,6 @@ MonoBehaviour:
   punkty: 0
   samochodRigidbody: {fileID: 0}
   predkoscTekst: {fileID: 1007638780}
---- !u!114 &2069928167 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2069928164, guid: f4589a7d3578240429d85893cc4d171f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2069928153}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069928154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e799a88da20c26c44a74974aa7b5ca92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2069928170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7280635437225304964, guid: f4589a7d3578240429d85893cc4d171f,

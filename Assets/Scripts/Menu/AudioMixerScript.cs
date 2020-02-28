@@ -6,12 +6,13 @@ using UnityEngine.Audio;
 public class AudioMixerScript : MonoBehaviour
 {
     public AudioMixer mastermixer;
+
     public void SetSfxLvl(float SfxLvl)
     {
         mastermixer.SetFloat("sfxVol", SfxLvl);
 
     }
-    public void xd(float MusicLvl)
+    public void SetVolLvl(float MusicLvl)
     {
         mastermixer.SetFloat("vol", MusicLvl);
     }

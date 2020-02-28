@@ -2879,6 +2879,7 @@ GameObject:
   - component: {fileID: 937839722}
   - component: {fileID: 937839721}
   - component: {fileID: 937839720}
+  - component: {fileID: 937839723}
   m_Layer: 5
   m_Name: ButtonChoose
   m_TagString: Untagged
@@ -2949,8 +2950,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 27c5b8d374c908b4dbdc2ec133b893d7, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 937839723}
+        m_MethodName: ChooseButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2996,6 +2997,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937839718}
   m_CullTransparentMesh: 0
+--- !u!114 &937839723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937839718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f679a37fe4093b4b8f20a4e31e6fbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotacja_aktualna: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3093,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1002894053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416225060383307115, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4416225059823158182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1002894055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002894053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd68e0f846004aa43a2a5e9966ca202b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mastermixer: {fileID: 24100000, guid: 52c93e170b8949c4d8e3f137c47052b0, type: 2}
 --- !u!1 &1040043809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,12 +6372,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: cd68e0f846004aa43a2a5e9966ca202b,
-        type: 3}
+      objectReference: {fileID: 1002894055}
     - target: {fileID: 4416225060383307113, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: SetVolLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416225060383307113, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4416225060417194183, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
