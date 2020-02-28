@@ -835,6 +835,7 @@ GameObject:
   - component: {fileID: 7286522285562522572}
   - component: {fileID: 7286522285562522571}
   - component: {fileID: 2069928164}
+  - component: {fileID: 6235229280616359059}
   m_Layer: 0
   m_Name: CAR_1
   m_TagString: Untagged
@@ -906,6 +907,44 @@ MonoBehaviour:
   lastCheckpoint_position: {x: 0, y: 0, z: 0}
   lastCheckpoint_rotation: {x: 0, y: 0, z: 0}
   flaga_first: 0
+  rigidbody: {fileID: 7286522285562522572}
+  center: {x: 0, y: 0, z: 0}
+  nitro_fuel: 100
+  text: {fileID: 1692669088876236865}
+  przednie_kiero_C: {fileID: 1692669088876236864}
+  przednie_pas_C: {fileID: 1692479617890463430}
+  tylnie_kiero_C: {fileID: 1692268832560353776}
+  tylnie_pas_C: {fileID: 1693008858968430842}
+  przednie_kiero_T: {fileID: 5160519070137888715}
+  przednie_pas_T: {fileID: 5160519070719731814}
+  tylnie_kiero_T: {fileID: 5160519070063679145}
+  tylnie_pas_T: {fileID: 5160519070814897619}
+  maxSteerAngle: 10
+  motorForce: 1000
+  breakForce: 100
+  motorforceBOOST: 2500
+  startPosition: {x: 0, y: 0, z: 0}
+  breakLights: {fileID: 0}
+  punkty: 0
+  samochodRigidbody: {fileID: 0}
+  predkoscTekst: {fileID: 0}
+--- !u!114 &6235229280616359059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286522285562522570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e799a88da20c26c44a74974aa7b5ca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromSlipBreak: 5
+  fromSlipBreak2: 4
+  lastCheckpoint_position: {x: 0, y: 0, z: 0}
+  lastCheckpoint_rotation: {x: 0, y: 0, z: 0}
+  flaga_first: 0
   rigidbody: {fileID: 0}
   center: {x: 0, y: 0, z: 0}
   nitro_fuel: 100
@@ -925,3 +964,5 @@ MonoBehaviour:
   startPosition: {x: 0, y: 0, z: 0}
   breakLights: {fileID: 0}
   punkty: 0
+  samochodRigidbody: {fileID: 0}
+  predkoscTekst: {fileID: 0}
