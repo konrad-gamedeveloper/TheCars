@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarControlScript : MonoBehaviour
 {
@@ -45,6 +46,11 @@ public class CarControlScript : MonoBehaviour
 
 
     public int punkty = 0;
+
+
+    private float predkosc;
+    public Rigidbody samochodRigidbody;
+    public Text predkoscTekst;
 
     public WheelFrictionCurve setPoslizg(float extremumSlip, float extremumValue, float asymptoteSlip, float asymptoteValue, float stiffness)
     {
@@ -202,6 +208,21 @@ public class CarControlScript : MonoBehaviour
         }
     }
 
+    public void Predkosciomierz()
+    {
+        predkosc = Vector3.Dot(samochodRigidbody.velocity, transform.forward) * 10;
+
+        if(predkosc > 0)
+        {
+            predkoscTekst.text = predkosc.ToString("0");
+        }
+        else
+        {
+            predkoscTekst.text = "0";
+        }
+
+    }
+
 
     public void UpdateWheelPoses()
     {
@@ -230,6 +251,7 @@ public class CarControlScript : MonoBehaviour
         Steer();
         Accelerate();
         UpdateWheelPoses();
+        Predkosciomierz();
 
     }
 
