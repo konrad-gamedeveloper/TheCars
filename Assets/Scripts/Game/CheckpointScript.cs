@@ -13,13 +13,13 @@ public class CheckpointScript : MonoBehaviour
     {
         cars.lastCheckpoint_position = gameObject.transform.position;
         cars.lastCheckpoint_rotation = fixedRotation;
-
         cars.flaga_first = true;
     }
 
     private void Start()
     {
-        cars = GameObject.Find("CAR_1").GetComponent<CarControlScript>();
+      //  cars = GameObject.Find("CAR_1").GetComponent<CarControlScript>();
+        cars = GameObject.FindGameObjectWithTag("CAR_1").GetComponent<CarControlScript>();
     }
 
 
