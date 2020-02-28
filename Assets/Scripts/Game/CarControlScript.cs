@@ -189,7 +189,7 @@ public class CarControlScript : MonoBehaviour
     }
     public void lastCheckpointJump()
     {
-        if ((Input.GetKey("r") && flaga_first == true))
+        if ((Input.GetKey("r")))
         {
             rigidbody.isKinematic = true;
             rigidbody.isKinematic = false;
