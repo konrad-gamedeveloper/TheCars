@@ -593,8 +593,8 @@ MonoBehaviour:
   center: {x: 0, y: 0, z: 0}
   nitro_fuel: 100
   text: {fileID: 2356694047496990594}
-  przednie_kiero_C: {fileID: 2357031942356357381}
-  przednie_pas_C: {fileID: 2356821483728989747}
+  przednie_kiero_C: {fileID: 2356694047496990595}
+  przednie_pas_C: {fileID: 2357031942356357381}
   tylnie_kiero_C: {fileID: 2356821483728989747}
   tylnie_pas_C: {fileID: 2357634099280242489}
   przednie_kiero_T: {fileID: 8094342843644497928}
