@@ -3419,7 +3419,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 27c5b8d374c908b4dbdc2ec133b893d7, type: 3}
+      - m_Target: {fileID: 1253944835}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -6376,7 +6376,7 @@ PrefabInstance:
     - target: {fileID: 4416225060383307113, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: xd
+      value: SetVolLvl
       objectReference: {fileID: 0}
     - target: {fileID: 4416225060417194183, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
