@@ -49,7 +49,7 @@ public class CarControlScript : MonoBehaviour
 
 
     private float predkosc;
-    public Rigidbody samochodRigidbody;
+   
     public Text predkoscTekst;
 
     public WheelFrictionCurve setPoslizg(float extremumSlip, float extremumValue, float asymptoteSlip, float asymptoteValue, float stiffness)
@@ -208,20 +208,20 @@ public class CarControlScript : MonoBehaviour
         }
     }
 
-    public void Predkosciomierz()
-    {
-        predkosc = Vector3.Dot(samochodRigidbody.velocity, transform.forward) * 10;
+    //public void Predkosciomierz()
+    //{
+    //    predkosc = Vector3.Dot(rigidbody.velocity, transform.forward) * 10;
 
-        if(predkosc > 0)
-        {
-            predkoscTekst.text = predkosc.ToString("0");
-        }
-        else
-        {
-            predkoscTekst.text = "0";
-        }
+    //    if(predkosc > 0)
+    //    {
+    //        predkoscTekst.text = predkosc.ToString("0");
+    //    }
+    //    else
+    //    {
+    //        predkoscTekst.text = "0";
+    //    }
 
-    }
+    //}
 
 
     public void UpdateWheelPoses()
@@ -236,7 +236,7 @@ public class CarControlScript : MonoBehaviour
     {
         rigidbody.centerOfMass = center;
         startPosition = gameObject.transform.position;
-        text = GameObject.FindGameObjectWithTag("Text");
+       // text = GameObject.FindGameObjectWithTag("Text");
         text.SetActive(false);
     }
 
@@ -251,7 +251,7 @@ public class CarControlScript : MonoBehaviour
         Steer();
         Accelerate();
         UpdateWheelPoses();
-        Predkosciomierz();
+      //  Predkosciomierz();
 
     }
 
