@@ -1327,6 +1327,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315891378}
   m_CullTransparentMesh: 0
+--- !u!1 &474639501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4416225060383307115, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4416225059823158182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &474639504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474639501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd68e0f846004aa43a2a5e9966ca202b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mastermixer: {fileID: 24100000, guid: 52c93e170b8949c4d8e3f137c47052b0, type: 2}
 --- !u!224 &483559459 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3485491875267930236, guid: daf3c3ae699a051459871aeaa849113a,
@@ -3093,25 +3112,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1002894053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4416225060383307115, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 4416225059823158182}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1002894055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002894053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd68e0f846004aa43a2a5e9966ca202b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mastermixer: {fileID: 24100000, guid: 52c93e170b8949c4d8e3f137c47052b0, type: 2}
 --- !u!1 &1040043809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6372,16 +6372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1002894055}
+      objectReference: {fileID: 474639504}
     - target: {fileID: 4416225060383307113, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetVolLvl
-      objectReference: {fileID: 0}
-    - target: {fileID: 4416225060383307113, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: xd
       objectReference: {fileID: 0}
     - target: {fileID: 4416225060417194183, guid: 2c8b7512b839a684c9ea735e3a1b75b5,
         type: 3}
@@ -6552,6 +6547,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8906077543332483285, guid: 00df3712cee417749b4634af203d56c9,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 52c93e170b8949c4d8e3f137c47052b0,
+        type: 2}
     - target: {fileID: 8906077543332483287, guid: 00df3712cee417749b4634af203d56c9,
         type: 3}
       propertyPath: m_Name
