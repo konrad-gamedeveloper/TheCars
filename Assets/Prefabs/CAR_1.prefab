@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 2069928164}
   m_Layer: 0
   m_Name: CAR_1
-  m_TagString: Untagged
+  m_TagString: CAR_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -851,7 +851,7 @@ Transform:
   m_GameObject: {fileID: 7286522285562522570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 453, y: 1552.33, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 7281010003913574664}
   - {fileID: 7281038879414061044}
@@ -925,5 +925,4 @@ MonoBehaviour:
   startPosition: {x: 0, y: 0, z: 0}
   breakLights: {fileID: 0}
   punkty: 0
-  samochodRigidbody: {fileID: 0}
   predkoscTekst: {fileID: 0}
